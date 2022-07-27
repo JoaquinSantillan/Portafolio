@@ -1,0 +1,45 @@
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: stretch;
+  cursor: none;
+  scroll-behavior: smooth;
+}
+
+body{
+  background-color: #191919;
+  overflow-x: hidden;
+}
+
+@font-face {
+  font-family: stretch;
+  src: url('../src/Fonts/StretchPro.otf');
+}
+
+.loading{
+  width: 100%;
+  height: 100vh;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+color: #fff;
+}
+
+.circle{
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  background-color: none;
+  border: 2px solid #fff;
+  text-align: center;
+  position: relative;
+}
+
+.count{
+  position: absolute;
+}

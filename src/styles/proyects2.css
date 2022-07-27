@@ -1,0 +1,145 @@
+section.aboutme{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    background-color: #191919;
+    position: relative;
+}
+
+
+.container-about-me{
+    width: 100%;
+    height: 400px;
+    z-index: 100;
+    overflow: hidden;
+}
+
+.testimonials{
+    width: 45%;
+    height: 600px;
+    color: #ffff;
+    margin-left: 50px;
+    margin-top: 70px;
+    text-align: center;
+}
+
+
+.item{
+    min-height: 500px;
+    min-width: 50%;
+    padding: 10px;
+    margin-top: 70px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.number-proyect{
+    font-size: 14px;
+    color: #fff;
+    top: 200px;
+    left: -15px;
+    transform: rotate(-90deg);
+    position: absolute;
+}
+
+.img-about{
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    object-fit: cover;
+}
+
+.container-hover-image{
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    background-color: #191919;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    transition: .5s all ease;
+}
+
+.container-hover-image a{
+    position: absolute;
+    top: 22.5%;
+    left: 36%;
+    font-size: 20px;
+    text-decoration: none;
+    color: #fff;
+    transition: .3s all ease;
+}
+
+.container-hover-image a:hover{
+    color: red;
+}
+
+.container-hover-image::after{
+    content: '';
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    background-color: transparent;
+    border: 1px solid #fff;
+    position: absolute;
+    border-radius: 100%;
+    top: 6%;
+    left: 35%;
+    z-index: -1;
+}
+
+
+.container-circle{
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    background-color: transparent;
+    border: 2px solid #fff;
+    position: absolute;
+    top: 6%;
+    left: 35%;
+    opacity: 0;
+}
+
+.container-hover-image:hover{
+    opacity: .7;
+}
+
+.img-container{
+    display: flex;
+    gap: 100px;
+}
+
+.container-about-me{
+    cursor:grab;
+    overflow: hidden;
+}
+
+.item-title{
+    position: absolute;
+    font-size: 45px;
+    color: #ffff;
+    top: -20px;
+    z-index: 10000;
+}
+
+
+.proyect-txt-titles{
+    width: 40%;
+    height: 120px;
+    color: #fff;
+    padding: 10px;
+}
+
+.proyect-txt-titles h1{
+    font-size: 40px;
+}
+
+.proyect-txt-titles p{
+    line-height: 20px;
+}
